@@ -1,0 +1,254 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('images/222.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* Navigation */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    background-color: #9b0909;
+}
+.menu{
+    display: flex;
+	align-items:left;
+}
+.menu li a{
+    padding: 6px 20px;
+    margin: 0px 15px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all ease 0.3s;
+	
+}
+.logo{
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1p;
+    color: #ffffff;
+} 
+
+.right-nav{
+    display: flex;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+}
+.right-nav a{
+    width:40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+.right-nav .like{
+    background-color: #fff0ee;
+    color: #ff6c57;
+}
+.right-nav .cart{
+    background-color: #ecf7ee;
+    color: #584eb0;
+}
+.right-nav .user-profile{
+    background-color: #ecf7ee;
+    color: rgb(139, 195, 221);
+}
+.right-nav a span{
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width:20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 0.6rem;
+    font-weight: 500;
+}
+.right-nav .like span{
+    background-color: #ff6c57;
+}
+.right-nav .cart span{
+    background-color: #4eb060;
+}
+.right-nav .user-profile span{
+    background-color: rgb(95, 183, 224);
+}
+.menu li a:hover,
+.menu .active{
+    color: #2d0202;
+    transition: all ease 0.3s;
+}
+
+/*nav end*/
+
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  
+}
+.contact-container {
+    max-width: 600px;
+    margin: 20px;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.contact-container h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    color: #333;
+}
+
+.contact-container p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 1em;
+}
+
+input:focus, textarea:focus {
+    border-color: #ea2424;
+    outline: none;
+    box-shadow: 0 0 5px rgba(203, 32, 32, 0.5);
+}
+
+button {
+    padding: 15px 20px;
+    border: none;
+    background-color: #c11818;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c43c3c;
+}
+
+/* footer */
+footer{
+    background-color: #0d0c0c;
+    padding: 50px 20px;
+    border-top: 5px solid #e32929;
+}
+.footer-container{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo a{
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer-logo a h2{
+    color: #ffffff;
+}
+.footer-social{
+    display: flex;
+    margin-top: 10px;
+}
+.footer-social a{
+    width:40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border: 1px solid #fd4343f0;
+    font-size: 0.9rem;
+    margin: 0px 5px;
+    transition: all ease 0.3s;
+}
+.footer-social a:hover{
+    background-color: #ef8686;
+    transition: all ease 0.3s;
+}
+.footer-links strong{
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.footer-links ul{
+    margin-top: 10px;
+}
+.footer-links ul li a{
+    color: #ffffff;
+    opacity: 0.5;
+    margin: 4px 0px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all ease 0.3s;
+}
+.footer-links li a:hover{
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+/*footer end*/
+
+
+@media (min-width: 600px) {
+    .footer-container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .footer-logo, .footer-links {
+        flex: 1 1 calc(33.333% - 20px);
+        margin-bottom: 0;
+    }
+}

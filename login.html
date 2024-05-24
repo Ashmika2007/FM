@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <link rel="stylesheet" type="text/css" href="./login.css">
+</head>
+<body>
+    
+  <section class="login-container">
+    <div class="login-form-wrapper">
+      <h1 class="login-heading">Welcome Back!</h1>
+      <form action="login.php" method="post" class="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Log In</button>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+      </form>
+    </div>
+    <div class="login-image-container">
+      <img src="./images/lo.jpeg" alt="Login Page Image">
+    </div>
+  </section>
+</body>
+</html>
